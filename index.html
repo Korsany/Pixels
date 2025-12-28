@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Pixels</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+   </head>
+
+   <body>
+      <div class="editor-container">
+         <div id="grid" class="grid"></div>
+         
+         <div class="controls">
+            <div class="preview-box">
+               <div id="css-render"></div>
+            </div>
+
+            <div class="tools-wrapper">
+                <div class="color-input-wrapper">
+                    <label for="color-picker">Brush Color</label>
+                    <div class="color-preview">
+                        <input type="color" id="color-picker" value="#7aa2f7">
+                    </div>
+                </div>
+                <div class="controls-hint">
+                    <span><b>LMB:</b> Draw</span>
+                    <span><b>RMB:</b> Erase</span>
+                </div>
+            </div>
+
+            <label>CSS Result: </label>
+            <textarea id="css-output" readonly></textarea>
+            <button onclick="location.reload()" class="clear-btn">Clear All</button>
+         </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>
